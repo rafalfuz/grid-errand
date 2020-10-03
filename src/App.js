@@ -9,15 +9,23 @@ const Banner = () => {
         src="https://placeimg.com/640/480/people"
         alt="img"
       ></img>
-      <p>2 / 10 / 2020</p>
-      <h1>Gigantyczny tytul zrobiony fajnym fontem</h1>
-      <p>
+      <p className="banner__date">2 / 10 / 2020</p>
+      <h1 className="banner__title">
+        Gigantyczny tytul zrobiony fajnym fontem
+      </h1>
+      <p className="banner__descripton">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
         diam et eros fringilla commodo. Quisque dapibus lectus et sem sodales,
         quis sagittis erat pellentesque. Nullam iaculis non urna in fringilla.
-        Nulla maximus quam eget rutrum auctor.
+        Nulla maximus quam eget rutrum auctor. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Praesent quis diam et eros fringilla
+        commodo. Quisque dapibus lectus et sem sodales, quis sagittis erat
+        pellentesque. Nullam iaculis non urna in fringilla. Nulla maximus quam
+        eget rutrum auctor.
       </p>
-      <a href="/toarticle">Dowiedz się wiecej...</a>
+      <a className="banner__more-info" href="/toarticle">
+        Dowiedz się wiecej...
+      </a>
     </div>
   );
 };
