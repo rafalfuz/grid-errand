@@ -10,9 +10,7 @@ const Banner = () => {
         alt="img"
       ></img>
       <p className="banner__date">2 / 10 / 2020</p>
-      <h1 className="banner__title">
-        Gigantyczny tytul zrobiony fajnym fontem
-      </h1>
+      <h1 className="banner__title">Duży tytuł zrobiony fajnym fontem</h1>
       <p className="banner__descripton">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent quis
         diam et eros fringilla commodo. Quisque dapibus lectus et sem sodales,
@@ -24,7 +22,7 @@ const Banner = () => {
         eget rutrum auctor.
       </p>
       <a className="banner__more-info" href="/toarticle">
-        Dowiedz się wiecej...
+        Dowiedz się więcej
       </a>
     </div>
   );
