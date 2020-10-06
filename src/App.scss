@@ -7,14 +7,15 @@
 .app {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 480px 360px 1fr 1fr;
+  grid-template-rows: 480px 360px 1fr;
   gap: 20px;
   grid-template-areas:
     "banner banner banner"
     "main-article main-article main-article"
-    "secondary secondary secondary"
     "secondary secondary secondary";
-  font-family: 'Piazzolla', serif;
+  font-family: "Piazzolla", serif;
+  margin: 20px auto;
+  width: 90vw;
 }
 
 .banner {
@@ -26,7 +27,6 @@
   &__img {
     flex-basis: 640px;
     height: 480px;
-    padding: 20px;
   }
 
   &__date {
@@ -53,10 +53,10 @@
     flex-basis: 10%;
     padding: 10px;
     text-align: center;
-    width: 30%;
+    width: 25%;
     color: black;
     border: 1px solid black;
-    margin: 40px auto 20px auto;
+    margin: 20px auto 20px auto;
     text-decoration: none;
     font-size: 2.2em;
     background-color: black;
@@ -74,9 +74,86 @@
   grid-area: main-article;
   display: flex;
   justify-content: space-around;
+  ;
+}
+
+.article {
+  flex-basis: 40%;
+  position: relative;
+  overflow: hidden;
+  max-height: 360px;
+
+  &__img {
+    width: 100%;
+    max-height: 360px;
+    transition: .5s;
+
+  }
+
+  &__img:hover {
+    transform: scale(1.1);
+  }
+
+  &__shadow {
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: .6;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: auto;
+    line-height: 60px;
+
+  }
+}
+
+.article:hover {
+  cursor: pointer;
+
 }
 
 .secondary {
-  background-color: cornsilk;
   grid-area: secondary;
+  display: flex;
+  flex-wrap: wrap;
+  ;
+}
+
+.art {
+  flex-basis: 33%;
+
+  &__img {
+    box-shadow: 0 0 3px black;
+  }
+
+  &__date {
+    font-size: .8em;
+  }
+
+  &__title {
+    text-align: center;
+    padding: 10px;
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    width: 30%;
+    margin: 5px auto 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: .3s;
+  }
+
+  &__link:hover {
+    background-color: black;
+    color: white;
+  }
 }
